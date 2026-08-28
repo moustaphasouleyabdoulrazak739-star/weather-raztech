@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-cyan-500 to-blue-600 py-10 px-4">
       <h1 className="text-3xl font-bold text-white text-center mb-6">
-        🌤️ Weather Raz-Tech
+        🌤️ Météo
       </h1>
 
       <div className="mb-8">
