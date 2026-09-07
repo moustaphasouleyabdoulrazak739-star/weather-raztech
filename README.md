@@ -1,16 +1,48 @@
-# React + Vite
+# Weather — RazTech
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Application météo affichant les conditions actuelles et les prévisions pour une ville, avec recherche par nom de ville. Affiche Niamey par défaut au chargement.
 
-Currently, two official plugins are available:
+**Démo en ligne :** https://weather-raztech.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Fonctionnalités
 
-## React Compiler
+- Recherche d'une ville
+- Météo actuelle (température, conditions, icône)
+- Prévisions sur plusieurs jours
+- Ville par défaut : Niamey
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack technique
 
-## Expanding the Oxlint configuration
+- React 19 + Vite
+- Tailwind CSS 3
+- API : [WeatherAPI.com](https://www.weatherapi.com/)
+- Déployé sur Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Lancer le projet en local
+
+```bash
+npm install
+npm run dev
+```
+L'application est servie sur `http://localhost:5173`.
+
+Crée un fichier `.env` à la racine (non versionné) avec ta propre clé WeatherAPI :
+
+```env
+VITE_WEATHER_API_KEY=...
+```
+
+Une clé gratuite peut être obtenue sur [weatherapi.com](https://www.weatherapi.com/).
+
+## Scripts
+
+| Commande | Description |
+|---|---|
+| `npm run dev` | Démarre le serveur de développement |
+| `npm run build` | Build de production |
+| `npm run lint` | Vérifie le code avec Oxlint |
+| `npm run preview` | Prévisualise le build de production |
+
+## Capture d'écran
+
+*(à ajouter — placer une image dans `docs/screenshot.png` et la référencer ici : `![Aperçu](docs/screenshot.png)`)*
